@@ -1,4 +1,11 @@
-:root{
+
+*{ /*para toda la pag*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{ /*creacion de variables */
     --poppins:'Poppins', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
     --pink: hsl(322, 100%, 60%);
@@ -6,7 +13,7 @@
     --light-red: hsl(0, 100%, 63%);
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
-    --padding-container: 80px, 0px;
+    --padding-container: 80px 0px;
 
 }
 
@@ -14,6 +21,45 @@ body{
     font-family: var(--open-sans);
 }
 
-p{
-    font-family: var(--poppins);
+.container{ /* contenedor del menu de navegacion */
+    width: 90%; /* el contenedor ocupa un width de 90% */
+    max-width: 1200px; /* con un maximo del 1200px */
+    margin: 0 auto; /* que centre el contenido */
+    overflow: hidden; /* que todo lo que salga del contenedor se esconda */
+    padding: var(--padding-container); /* que tenga un paddin de la medida de la variable */
 }
+
+.hero{ /* contenedor de toda la seccion */
+    min-height: 100vh; /*altura porcentual de la ventana */
+    position: relative; /* para posicionar la wave de mas abajo */
+
+}
+
+.hero__nav{ /* es el contenedor de navegacion */
+    display: flex; /* para que sea un flex container y el contenido se ponga uno al lado del otro */
+    justify-content: space-between; /* para que los elementos se peguen a los margenes */
+    align-items: center; /* para que se centren verticalmente */
+    --padding-container: 60px 0 45px; /* se modifica la variable de padding */
+}
+
+.hero__logo{ /* es el contenedor del logo */
+    width: 45%;
+    max-width: 160px;
+}
+
+.hero__huddle{ /* es el contenedor de la imagen del logo */
+    width: 100%;
+    display: block; /* para quitar el margen de la imagene */
+}
+
+.hero__cta{ /* enlace que funciona como boton */
+    color: var(--light-red);
+    text-decoration: none; /* para queitar subrayado del enlace */
+    border: 2px solid; /* se crea un borde */
+    padding: 6px 16px; /* separacion del borde a las letras de 6px ariba-abajo y 16px izquierda-derecha */
+    border-radius: 25px; /* para redondear las esquinas del borde */
+    font-weight: 600; /* para que la fuente sea mas pesada */
+    box-shadow: 0 0 1px; /* sombreado 0 en X, 0 en Y y 1px de bleur */
+}
+
+
