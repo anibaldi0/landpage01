@@ -62,4 +62,60 @@ body{
     box-shadow: 0 0 1px; /* sombreado 0 en X, 0 en Y y 1px de bleur */
 }
 
+.hero__main{
+    text-align: center; /* todos los textos centrados */
+    color: var(--very-dark-cyan);
+}
+.hero__title{
+    font-family: var(--poppins);
+}
 
+.hero__paragraph{
+    margin: 16px auto; /* margen de 16px arriba y abajo y auto a los costados para separarlos del titulo y del boton */
+    width: 90%;
+    line-height: 1.5; /* interlineado del parrafo */
+}
+
+.cta{ /* el elemento cta se considera bloque */
+    display: inline-block;
+    background-color: var(--light-pink); /* fonde de letras rosa */
+    color: #fff; /* letras blancas */
+    text-decoration: none; /* para quitar el subrrayado */
+    padding: 16px 30px; /* padding 16px arriba y abajo y 30px a los costados */
+    border-radius: 25px; /* para redondear el fonde rosa */
+    margin-top: 20px; /* para darle margen de 20 px arriba */
+    margin-bottom: 25px;
+}
+
+.hero__picture{
+    margin-top: 80px; /* para que la imagen se separe 80px del boton rosa */
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 600px; /* para cuando se hace mas grande el navegador */
+    margin: 0 auto; /* para centrarlo horizontalmente */
+    display: block; /* para evitar borde de las imagenes */
+}
+
+.hero__numbers{
+    margin-top: 80px; /* para que los numeros tengan un margen superior de 80px */
+    display: flex; /* para que los numeros se pongan uno al lado del otro */
+    flex-direction: column; /* para que los numeros esten en columna */
+    align-items: center; /* para que esten centrados */
+    padding-bottom: 100px; /* para que haya separacion de 100px entre los numeros y el final de la seccion */
+}
+
+.hero__item{
+    overflow: hidden; /* para que lo que sobresalga se oculte */
+    margin-bottom: 30px; /* para que haya mayor espaciado entre los numeros */
+}
+
+.hero__number{
+    font-size: 60px;
+}
+
+.hero__icon{
+    display: block; /* para que los iconos se vayan hacia la izquierda */
+    
+}
