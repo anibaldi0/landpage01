@@ -14,6 +14,7 @@
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
     --padding-container: 80px 0px;
+    --wave-bottom: 
 
 }
 
@@ -32,7 +33,7 @@ body{
 .hero{ /* contenedor de toda la seccion */
     min-height: 100vh; /*altura porcentual de la ventana */
     position: relative; /* para posicionar la wave de mas abajo */
-
+    --wave-bottom: url('../images/bg-section-top-mobile-1.svg') 
 }
 
 .hero__nav{ /* es el contenedor de navegacion */
@@ -104,6 +105,7 @@ body{
     flex-direction: column; /* para que los numeros esten en columna */
     align-items: center; /* para que esten centrados */
     padding-bottom: 100px; /* para que haya separacion de 100px entre los numeros y el final de la seccion */
+    gap: 60px; /* para dejar espaciado entre los numeros */
 }
 
 .hero__item{
@@ -117,5 +119,27 @@ body{
 
 .hero__icon{
     display: block; /* para que los iconos se vayan hacia la izquierda */
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
     
+    background-repeat: no-repeat; /* para que no se repita la wave */
+    background-size: 100% 100px; /* para que la wave ocupe toda la pag */
+}
+
+.wave__bottom{ /* wave de abajo */
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+
+}
+
+.wave__top{ /* wave de arriba */
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+
 }
